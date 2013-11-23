@@ -23,36 +23,6 @@ print_map (void)
     }
 }
 
-void
-print_map1 (void)
-{
-
-  printf ("LAST-----------------------------\n");
-  map < string, LL >::iterator it;
-  for (it = last.begin (); it != last.end (); it++)
-    {
-      cout << it->first << " " << it->second << endl;
-    }
-
-  printf ("LAST-----------------------------\n");
-}
-
-void
-print_set (void)
-{
-  printf ("SET##############################\n");
-
-  set < pair < LL, string > >::iterator it;
-  for (it = S.begin (); it != S.end (); it++)
-    {
-
-      cout << it->second << " " << it->first << endl;
-    }
-
-
-  printf ("SET##############################\n");
-}
-
 
 int
 main ()
@@ -68,10 +38,6 @@ main ()
       cnt++;
       string s, x;
       string val;
-//              print_map();
-//              print_map1();
-//              print_set();
-//              printf("################:%d\n",S.size());
       cin >> s;
       if (s == "BOUND")
 	cin >> BS;
